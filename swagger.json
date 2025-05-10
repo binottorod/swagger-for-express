@@ -1,0 +1,57 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Modular API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/hello": {
+      "get": {
+        "summary": "Returns a greeting",
+        "responses": {
+          "200": {
+            "description": "Greeting text"
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "summary": "Logs in a user",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Missing fields or invalid credentials"
+          }
+        }
+      }
+    }
+  },
+  "components": {},
+  "tags": []
+}
