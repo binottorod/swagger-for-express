@@ -1,0 +1,28 @@
+{
+  "name": "swagger-for-express",
+  "version": "1.0.0",
+  "description": "Project to demonstrate possible usages of swagger with node express",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binottorod/swagger-for-express.git"
+  },
+  "keywords": [
+    "express",
+    "swagger"
+  ],
+  "author": "binottorod",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binottorod/swagger-for-express/issues"
+  },
+  "homepage": "https://github.com/binottorod/swagger-for-express#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
